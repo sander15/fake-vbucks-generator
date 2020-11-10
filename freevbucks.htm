@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free VBUCKS Generator by Sander15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="inputBox">
+        <h2>FREE VBUCKS</h2>
+        <input type="text" name="" placeholder="" id="code" readonly="">
+        <div id="btn" onclick="getCode();">Generate VBUCKS</div>
+    </div>
+    <script type="text/javascript">
+    function getCode(){
+        var chars="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var codeLength="15";
+        var code="";
+
+        for (var i=0; i<codeLength; i++){
+          var randomNumber=Math.floor(Math.random() * chars.length);
+          code += chars.substring(randomNumber,randomNumber+1);  
+        }
+        document.getElementById("code").value=code
+    }
+    </script>
+    <style>
+        body {
+          background-image: url('https://i.insider.com/5bd9f4860591f23a4b521857');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style> 
+</body>
+</html>
